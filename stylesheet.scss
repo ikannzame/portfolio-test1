@@ -1,0 +1,184 @@
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*ヘッダー*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.541);
+
+    .site-title {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        margin-left: 30px;
+    }
+    .header-nav {
+        background-color:rgba(47, 189, 255, 0.233);
+    }
+    .header-nav-menu {
+        display: flex;
+    }
+    .header-item {
+        font-size: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        line-height: 100px;
+    }
+}
+/*モーダル部分*/
+.login-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+}
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+    .fa-times {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+    }
+}
+#login-form {
+    width: 100%;
+     h2 {
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    }
+    input {
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+    }
+}
+
+            
+#submit-btn {
+    display: inline-block;
+    padding: 14px 140px;
+    background-color: #ca5daf;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/*メイン*/
+/*スライダー*/
+main {
+    .top-slider {
+        width: 1000px;
+        height: 1000px;
+        margin: 0 auto;
+    }
+    /*スクロールアニメーション*/
+    p {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 200px;
+    }
+    .block {
+        width: 500px;
+        height: 500px;
+        margin: 100px auto;
+        color: white;
+        text-align: center;
+        background-color: blue;
+    }
+}
+/*少し飛び地になりましたが、スライダーの矢印や点の装飾部分*/
+.slick-prev::before,
+.slick-next::before {
+    color: black!important;
+}
+
+
+/*FAQのアコーディオン装飾*/
+.faq-wrapper {
+    background-color: #e6ecf0;
+    text-align: center;
+    padding-bottom: 80px;
+    color: #5f5d60;
+    h2 {
+        font-size: 70px;
+        padding: 100px 0;
+    }
+    #faq-list {
+        width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        .faq-list-item {
+            margin: 10px;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+            cursor: pointer;
+            text-align: left;
+            h3 {
+                font-size: 40px;
+            }
+            .question {
+        
+            }
+            span {
+                position: absolute;
+                top: 0;
+                right: 5px;
+                color: #ccc;
+                font-size: 40px;
+            }
+            .answer {
+                font-size: 12px;
+                padding-top: 5px 0px;
+                margin-bottom: 15px;
+                display: none;
+                p {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+  
+  /* トップへ戻るボタン */
+#page-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    i {
+        color:orangered;
+    }
+    i:hover {
+        cursor: pointer;
+    }
+}
+
+/*お問い合わせフォーム*/
