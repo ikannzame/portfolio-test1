@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ポートフォリオのテスト</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/item1.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="./stylesheet.scss">
+    <link rel="stylesheet" href="./res/responsive.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./aos.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <!--ハンバーガーメニュー（レスポンシブも含む）-->
+    <header id="header">
+        <h1 class="site-title"><a href="#"><img src="./img/logo (16).svg" alt="サイトタイトル"></a></h1>
+        <nav class="header-nav">
+            <ul class="header-nav-menu">
+                <li class="header-item"><a href="#">会社概要</a></li>
+                <li class="header-item"><a href="#">事業内容</a></li>
+                <li class="header-item" id="login-show"><a href="#">ログイン</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--モーダルの作成-->
+    <div class="login-modal-wrapper" id="login-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <div id="login-form">
+          <h2>Emailログイン</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div id="submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!--slick slider-->
+        <div class="top-slider">
+            <img src="./img/item1.jpg" alt="">
+            <img src="./img/item2.jpg" alt="">
+            <img src="./img/item3.jpg" alt="">
+            <img src="./img/item4.jpg" alt="">
+            <img src="./img/item5.jpg" alt="">
+        </div>
+      <!--aos.jsスクロールアニメーション-->
+        <p>スクロールしてください</p>
+        <div class="block" data-aos="fade"><a href="#"><img src="./img/item13.jpg" alt="">fade</a></div>
+        <div class="block" data-aos="fade-up"><img src="./img/item16.jpg" alt="">fade-up</div>
+        <div class="block" data-aos="fade-down">
+          fade-down
+        </div>
+        <div class="block" data-aos="fade-left">
+          fade-left
+        </div>
+        <div class="block" data-aos="fade-right">
+          fade-right
+        </div>
+        <div class="block" data-aos="fade-up-left">
+          fade-up-left
+        </div>
+        <div class="block" data-aos="fade-up-right">
+          fade-up-right
+        </div>
+        <div class="block" data-aos="fade-down-left">
+          fade-down-left
+        </div>
+        <div class="block" data-aos="fade-down-right">
+          fade-down-right
+        </div>
+      <!--アコーディオン-->
+        <div class="faq-wrapper">
+          <div class="container">
+            <div class="heading">
+              <h2>FAQ</h2>
+            </div>
+            <div class="faq">
+              <ul id="faq-list">
+                <li class="faq-list-item">
+                  <h3 class="question">当社の作成スキル？</h3>
+                  <span>+</span>
+                  <div class="answer">
+                    <p>●html.css.sass.jqueryを使用したLPコーディング作成。<br>
+                    ●本番のリモート環境へ上げる複数ページのサイト制作。<br>
+                    ●wordpressを使用したサイト作成。（また既存のサイトをwordpressに置き換える事も出来ます。）</p>
+                  </div>
+                </li>
+                <li class="faq-list-item">
+                  <h3 class="question">作成費用？</h3>
+                  <span>+</span>
+                  <div class="answer">
+                    <p>●LPコーディング１ページ＝１万円～５万円<br>
+                    ●複数ページのサイト制作＝15万円～20万円<br>
+                    ●wordpressを使用したサイト作成（既存サイトの置き換えも含む）＝20万円～40万円<br>
+                    ”上記の金額はあくまで目安です。内容や納期などその他の理由も考慮して金額は変動します。”<br>まずはお気軽にご連絡下さい。</p>
+                  </div>
+                </li>
+                <li class="faq-list-item">
+                  <h3 class="question">作成したサイトからの売上up</h3>
+                  <span>+</span>
+                  <div class="answer">
+                    <p>●多くのお客様のご要望として「サイト作成」から「そのサイトを通しての集客、売上を図りたい」との声が多いです。<br>
+                    当社にお任せください。当社は「サイト作成」から「集客、売上upのためのwebマーケティング」までを一括サポートいたします。</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--トップへ戻るボタン-->
+        <div id="page-top">
+          <!-- 好きなアイコンを選択 -->
+          <i class="far fa-arrow-alt-circle-up fa-2x"></i>
+        </div>
+
+        <!--お問い合わせフォーム-->
+        
+    </main>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./aos.js"></script>
+</body>
+</html>
